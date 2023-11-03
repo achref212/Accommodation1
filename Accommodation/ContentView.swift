@@ -28,17 +28,8 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
+            
+            Text("Select aan item")
         }
     }
 
@@ -68,7 +59,7 @@ struct ContentView: View {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nsError = error as NSError
-                fatalError("Unresolgggved error \(nsError), \(nsError.userInfo)")
+                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
             }
         }
     }
